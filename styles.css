@@ -1,7 +1,6 @@
 * {
     box-sizing: border-box;
 }
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=Frank+Ruhl+Libre:wght@900&display=swap');
 body {
     width: 1002px;
     height: 100%;
@@ -9,19 +8,22 @@ body {
 }
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 544px auto 340px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 544px 57px 612px 680px 438px 68px 340px;
     grid-template-areas: 
-    "header sidebar"
-    "navbar navbar"
-    "main main"
-    "about-us about-us"
-    "how-it-works how-it-works"
-    "up up"
-    "footer footer";
+    "header header header header header header"
+    "navbar navbar navbar navbar navbar navbar"
+    "main main main main main main"
+    "cards cards cards cards cards cards"
+    "about-us about-us about-us about-us about-us about-us"
+    "how-it-works how-it-works how-it-works how-it-works how-it-works how-it-works"
+    "up up up up up up"
+    "footer footer footer footer footer footer"
+    ;
 }
 img {
     width: 100%;
+    height: auto;
 }
 h1 h2 h3 h4 {
     font-family: 'Frank Ruhl Libre', serif;
@@ -30,7 +32,6 @@ h1 h2 h3 h4 {
 }
 h1 {
     font-size: 45px;
-    letter-spacing: -0.02em;
 }
 h2 {
     font-size: 35px;
@@ -44,156 +45,54 @@ h4 {
     font-size: 16px;
     line-height: 20px;
 }
-p .menu > li > a {
+p {
     font-family: 'Fira Sans', sans-serif;
 }
 .header {
     grid-area: header;
-    background: #C7DDEA;
-    display: flex;
-    flex-direction: column;
-
+    background-color: yellow;
+    display: block;
 }
-.header-text {
-    align-self: center;
-    justify-self: center;
-    padding: 20px;
-    
+.header1 {
+    width: 501px;
 }
-.header p {
-    font-size: 14px;
-    line-height: 24px;
-}
-.header figure {
-    justify-self: flex-end;
-    align-self: flex-end;
-    max-width: 286px;
-    max-height: 279px;
-    
-}
-.header img {
-    object-fit: contain;
-    overflow: hidden;
+.header1 figure {
     width: 286px;
     height: 279px;
+    object-fit: cover;
+    overflow: hidden;
 }
-.sidebar {
-    grid-area: sidebar;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.header2 {
+    width: 501px;
 }
-
-    
-.art1 {
-    
-    flex: auto;
-    width: 100%;
-    height: 100%;
-    background: #F17949;
-}
-.art2 {
-    width: 100%;
-    height: 100%;
-    background: #FAB131;
+.header3 {
+    width: 501px;
 }
 .navbar {
-    min-height: 57px;
     grid-area: navbar;
-    background: #E5E5E5;
-}
-.menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    list-style-type: none;
-    font-family: 'Fira Sans', sans-serif;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 100%;
-    padding-top: 10px;
-}
-.menu a {
-    text-decoration: none;
-    color: gray;
-}
-.menu a:hover {
-    text-decoration: underline;
-    text-decoration-color:lightskyblue
-}
-.home {
-    text-decoration: solid black;
+    background-color: orange;
 }
 .main {
     grid-area: main;
-    background: #A9A19E;
-    min-height: 612px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-.main h1 {
-    color: white;
-}
-.main article {
-    display: flex;
-    min-width: 50%;
+    background-color: red;
 }
 .cards {
+    grid-area: cards;
     background-color: purple;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    list-style-type: none;
-    
 }
 .cards figure {
-    min-width: 236px;
-    min-height: 150px;
-    object-fit: contain;
+    width: 236px;
+    height: 150px;
+    object-fit: cover;
     overflow: hidden;
-    align-items: center;
-}
-.cards img {
-    width: 100px;
-    
 }
 .about-us {
-    min-height: 680px;
     grid-area: about-us;
     background-color: blue;
 }
 .how-it-works {
     grid-area: how-it-works;
     background-color:lightblue;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 340px;
-}
-.how-it-works h2 {
-    align-self: flex-start;
-}
-.how-it-works p {
-    align-self: center;
-}
-.how-it-works article {
-    
-}
-.box1 {
-    background: #C7DDEA;
-}
-.box2, .box4, .box6 {
-    background: #FFFFFF;
-}
-.box3 {
-    background: #EBEBEB;
-}
-.box4 {
-    background: #F17949;
 }
 .up {
     grid-area: up;
