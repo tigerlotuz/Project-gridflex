@@ -8,18 +8,17 @@ body {
 }
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 544px 57px 612px 680px 438px 68px 340px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 544px auto 340px;
     grid-template-areas: 
-    "header header header header header header"
-    "navbar navbar navbar navbar navbar navbar"
-    "main main main main main main"
-    "cards cards cards cards cards cards"
-    "about-us about-us about-us about-us about-us about-us"
-    "how-it-works how-it-works how-it-works how-it-works how-it-works how-it-works"
-    "up up up up up up"
-    "footer footer footer footer footer footer"
-    ;
+    "header sidebar"
+    "navbar navbar"
+    "main main"
+    "cards cards"
+    "about-us about-us"
+    "how-it-works how-it-works"
+    "up up"
+    "footer footer";
 }
 img {
     width: 100%;
@@ -50,23 +49,24 @@ p {
 }
 .header {
     grid-area: header;
-    background-color: yellow;
-    display: block;
+    background: #C7DDEA;
 }
-.header1 {
-    width: 501px;
+.sidebar {
+    grid-area: sidebar;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
-.header1 figure {
-    width: 286px;
-    height: 279px;
-    object-fit: cover;
-    overflow: hidden;
+.art1 {
+    width: 100%;
+    height: 50%;
+    background: #F17949;
 }
-.header2 {
-    width: 501px;
-}
-.header3 {
-    width: 501px;
+.art2 {
+    width: 100%;
+    height: 50%;
+    background: #FAB131;
 }
 .navbar {
     grid-area: navbar;
