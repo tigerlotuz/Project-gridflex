@@ -201,3 +201,7 @@ p .menu > li > a {
     grid-area: footer;
     background-color: green;
 }
+
+.whiteamount {
+    color: white;
+}
