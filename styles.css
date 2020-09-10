@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    width: 1002px;
+    height: 100%;
+    margin: 0 auto;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 544px 57px 612px 680px 438px 68px 340px;
+    grid-template-areas: 
+    "header header header header header header"
+    "navbar navbar navbar navbar navbar navbar"
+    "main main main main main main"
+    "cards cards cards cards cards cards"
+    "about-us about-us about-us about-us about-us about-us"
+    "how-it-works how-it-works how-it-works how-it-works how-it-works how-it-works"
+    "up up up up up up"
+    "footer footer footer footer footer footer"
+    ;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+h1 h2 h3 h4 {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-weight: 900;
+    line-height: 100%;
+}
+h1 {
+    font-size: 45px;
+}
+h2 {
+    font-size: 35px;
+}
+h3 {
+    font-size: 32px;
+    line-height: 41px;
+}
+h4 {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+}
+p {
+    font-family: 'Fira Sans', sans-serif;
+}
+.header {
+    grid-area: header;
+    background-color: yellow;
+    display: block;
+}
+.header1 {
+    width: 501px;
+}
+.header1 figure {
+    width: 286px;
+    height: 279px;
+    object-fit: cover;
+    overflow: hidden;
+}
+.header2 {
+    width: 501px;
+}
+.header3 {
+    width: 501px;
+}
+.navbar {
+    grid-area: navbar;
+    background-color: orange;
+}
+.main {
+    grid-area: main;
+    background-color: red;
+}
+.cards {
+    grid-area: cards;
+    background-color: purple;
+}
+.cards figure {
+    width: 236px;
+    height: 150px;
+    object-fit: cover;
+    overflow: hidden;
+}
+.about-us {
+    grid-area: about-us;
+    background-color: blue;
+}
+.how-it-works {
+    grid-area: how-it-works;
+    background-color:lightblue;
+}
+.up {
+    grid-area: up;
+    background-color: lightgreen;
+}
+.footer {
+    grid-area: footer;
+    background-color: green;
+}
