@@ -53,12 +53,7 @@ h4 {
     font-size: 16px;
     line-height: 20px;
 }
-<<<<<<< HEAD
 * p {
-=======
-
-p .menu > li > a {
->>>>>>> d232a8798abe4f89310bc6d5dcf843496805ad0f
     font-family: 'Fira Sans', sans-serif;
 }
 
@@ -238,7 +233,6 @@ p .menu > li > a {
 
 
 .about-us {
-<<<<<<< HEAD
     grid-area: about-us;
     background: #FAB131;
     display: flex;
@@ -250,11 +244,6 @@ p .menu > li > a {
     line-height: 20px;
     padding-left: 280px;
     padding-right: 280px;
-=======
-
-    grid-area: about-us;
-
->>>>>>> d232a8798abe4f89310bc6d5dcf843496805ad0f
 }
 
 .how-it-works {
