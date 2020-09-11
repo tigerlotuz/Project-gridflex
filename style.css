@@ -4,7 +4,7 @@ html {
     *, *:before, *:after {
     box-sizing: inherit;
     }
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=Frank+Ruhl+Libre:wght@900&display=swap');
+
 body {
     width: 1002px;
     height: 100%;
