@@ -1,0 +1,103 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 340px 68px 544px 407px 340px;
+    grid-template-areas: 
+    "header header"
+    "navbar navbar"
+    "main main"
+    "come-visit-us come-visit-us"
+    "footer footer";
+}
+.header {
+    background: #C7DDEA;
+    min-width: 100%;
+}
+.header > article > h1 {
+    text-align: center;
+    padding-top: 120px;
+}
+.header > figure > img {
+    align-self: flex-end;
+    margin-top: -95px;
+    margin-right: 80px;
+}
+.navbar {
+    background: #FFFFFF;
+}
+.main > article {
+    display: flex;
+    align-self: flex-start;
+    padding-top: 50px;
+}
+.sidebar {
+    padding-top: 50px;
+    text-align: left;
+    color: white;
+}
+.sidebar > input {
+    min-width: 334px;
+    padding: 5px;
+    border: none;
+    border-radius: 2px;
+    background: #FEFEFE;
+    font-family: 'Fira Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    color: #000000;
+    resize: none;
+  }
+  .email {
+      min-height: 40px;
+  }
+  .message {
+    min-height: 166px;
+  }
+  .button {
+      align-self: flex-end;
+  }
+.map {
+    background-image: url();
+    min-width: 1002px;
+    min-height: 407px;
+    object-fit: cover;
+    object-position: center;
+}
+.dart {
+    max-width: 70px;
+    top: -250px;
+}
+.come-visit-us {
+    position: relative;
+    text-align: start;
+  }
+  .textbox {
+    margin-top: 20px;
+    margin-left: 40px;
+    min-width: 323px;
+    min-height: 206px;
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    padding-left: 23px;
+    padding-right: 23px;
+    background: #FAB131;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+  }
+  .textbox > h1 {
+    padding-top: 20px;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    margin-top: 3px;
+    margin-bottom: 2px;
+  }
+  .textbox > p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 8px;
+    color: rgba(255, 255, 255, 0.8);
+  }
