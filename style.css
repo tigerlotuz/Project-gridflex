@@ -58,7 +58,7 @@ h4 {
 .button {
     margin-top: 50px;
     background: #FFFFFF;
-    box-shadow: 0px 2px 0px lightgrey;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
     font-weight: bold;
     font-size: 10px;
@@ -221,14 +221,18 @@ h4 {
 .cards img {
     border-radius: 5px;
     margin-top: -45px;
+    margin-left: -30px;
     width: 100%;
     max-height: 150px;
-    padding-top: 2rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-top: 1rem;
+    padding-left: 5rem;
+    padding-right: 4rem;
     object-fit: cover;
     object-position: top;
     overflow: hidden;
+}
+.child, .adult, .old {
+    min-width: 236px;
 }
 .child {
     background: #C7DDEA;
@@ -241,9 +245,10 @@ h4 {
 }
 .cardimg {
     background: white;
-    width: 256px;
+    max-width: 256px;
     min-height: 308px;
     border-radius: 5px;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
 }
 .about-us {
     grid-area: about-us;
