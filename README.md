@@ -1,3 +1,3 @@
 # Projekt-gridflex
-Saras å Henkes projekt
-Första grupparbetet. 
+My first schoolproject in HTML and CSS.
+Made by me and Henrik
